@@ -42,7 +42,7 @@ git add . && git stash                                                          
 git stash apply                                                                         (this will apply new latest stash form bucket)
 git stash list                                                                          (this will show all the list of stash in your bucket)
 git stash drop                                                                          (clear whole bucket remove every stash)
-git stash pop                                                                           (remove last new stash that you have added in stack)
+git stash pop    // this will execute 2 commands 42,44                                  (remove last new stash that you have added in stack)
 git stash push -m 'message for stash'                                                   (this will add stash message, you can see this while listing the bucket stash)
 git stash show stash@{0}    // index this will return files name that is having changes (this index of stash can be achived via "git stash list")
 git stash show -p stash@{0}                                                             (this will return all file inside changes)
