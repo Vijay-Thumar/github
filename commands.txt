@@ -35,3 +35,14 @@ example: https://vijay-thuamar:token@github.com/ChintanJoshi14/Fundamentals-for-
 ** if your having 403 unauthorized access and cannot do pull and push on repo then execute this command 
 syntex: git remote set-url origin https://yourgithubusername:yourpersonalaccesstoken@github.com/yourgithubusername/reponame.git
 Example: git remote set-url origin https://vijay-thumar-simform:token@github.com/vijay-thumar-simform/Vue-Stripe-POC.git
+
+** Git stash commands
+git stash                                                                               (it will add your current chages in to the stash bucket)
+git add . && git stash                                                                  (this will add also untracked files into the bucket)
+git stash apply                                                                         (this will apply new latest stash form bucket)
+git stash list                                                                          (this will show all the list of stash in your bucket)
+git stash drop                                                                          (clear whole bucket remove every stash)
+git stash pop                                                                           (remove last new stash that you have added in stack)
+git stash push -m 'message for stash'                                                   (this will add stash message, you can see this while listing the bucket stash)
+git stash show stash@{0}    // index this will return files name that is having changes (this index of stash can be achived via "git stash list")
+git stash show -p stash@{0}                                                             (this will return all file inside changes)
