@@ -2,7 +2,7 @@
 git config --global user.name "your_user_name"   (to set your user name)    <--- if this not work please try with "user.username"
 git config --global user.email "your_user_name"  (to set your email)
 git config --global --unset-all user.name        (to unset the user.name form global)
-git config --global --unset-all user.name        (to unset the user.email from global)
+git config --global --unset-all user.email       (to unset the user.email from global)
 code .git/config                                 (to edit the config file of the repo)  <-- This will show multiple information like reponame with user name and email
 git config --global --edit                       (to open and edit git global config file)
 git config --global core.editor "code --wait"    (to set default code editor as vscode "<ide name> --wait")
