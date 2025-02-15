@@ -8,6 +8,8 @@ git config --global --edit                       (to open and edit git global co
 
 ** to edit the project config file **
 git config --global core.editor "code --wait"    (to set default code editor as vscode "<ide name> --wait") *Worked on windows
+git config --global --unset core.editor          (to unset the default editor with the name)
+git config --global core.editor "cursor --wait"  (to set the cursor as a default editor)
 git config --local --edit                        (to set default code editor as vscode "<ide name> --wait") *Worked on ubantu
 
 ** add password and save in cache
